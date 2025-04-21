@@ -8,6 +8,16 @@ public class Item {
     private String barCodeNumber;
     private String imageUrl;
 
+    public Item(Long id, String type, String model, String barCodeNumber, String imageUrl) {
+        this.id = id;
+        this.type = type;
+        this.model = model;
+        this.barCodeNumber = barCodeNumber;
+        this.imageUrl = imageUrl;
+    }
+
+    public Item(){}
+
     public Long getId() {
         return id;
     }

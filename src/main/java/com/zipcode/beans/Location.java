@@ -13,6 +13,18 @@ public class Location {
     private String addressZip;
     private List<Item> inventory = new ArrayList<>();
 
+    public Location(List<Item> inventory, String addressZip, String addressState, String addressCity, String addressStreet, String name, Long id) {
+        this.inventory = inventory;
+        this.addressZip = addressZip;
+        this.addressState = addressState;
+        this.addressCity = addressCity;
+        this.addressStreet = addressStreet;
+        this.name = name;
+        this.id = id;
+    }
+
+    public Location(){}
+
     public Long getId() {
         return id;
     }
