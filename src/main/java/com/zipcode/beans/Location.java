@@ -13,7 +13,7 @@ public class Location {
     private String addressZip;
     private List<Item> inventory = new ArrayList<>();
 
-    public Location(List<Item> inventory, String addressZip, String addressState, String addressCity, String addressStreet, String name, Long id) {
+    public Location(Long id,String name,String addressStreet, String addressCity,String addressState,String addressZip,  List<Item> inventory) {
         this.inventory = inventory;
         this.addressZip = addressZip;
         this.addressState = addressState;

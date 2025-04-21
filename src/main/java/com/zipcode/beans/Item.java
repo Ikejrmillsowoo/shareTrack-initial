@@ -16,6 +16,7 @@ public class Item {
         this.model = model;
         this.barCodeNumber = barCodeNumber;
         this.imageUrl = imageUrl;
+        this.locationId = locationId;
     }
 
     public Item(){}
