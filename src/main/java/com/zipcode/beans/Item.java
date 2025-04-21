@@ -7,8 +7,10 @@ public class Item {
     private String model;
     private String barCodeNumber;
     private String imageUrl;
+    private Long locationId;
 
-    public Item(Long id, String type, String model, String barCodeNumber, String imageUrl) {
+
+    public Item(Long id, String type, String model, String barCodeNumber, String imageUrl, Long locationId) {
         this.id = id;
         this.type = type;
         this.model = model;
@@ -56,6 +58,14 @@ public class Item {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public Long getLocationId() {
+        return locationId;
+    }
+
+    public void setLocationId(Long locationId) {
+        this.locationId = locationId;
     }
 
 }
